@@ -25,6 +25,18 @@ public class Book {
 	@Column(name="stock")
 	private int stock;
 
+	public Book(String title, String author, double price) {
+		super();
+		this.title = title;
+		this.author = author;
+		this.stock = stock;
+	}
+	
+
+	public Book() {
+		super();
+	}
+
 
 	public int getStock() {
 		return stock;
